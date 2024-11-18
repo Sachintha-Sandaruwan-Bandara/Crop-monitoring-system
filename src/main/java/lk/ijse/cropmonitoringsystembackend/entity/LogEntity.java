@@ -7,8 +7,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class MonitoringLogEntity {
 
+    @Id
+    private String logCode;
 
+    private LocalDate logDate;
+    private String logDetail;
+    private String observedImage;
 }
