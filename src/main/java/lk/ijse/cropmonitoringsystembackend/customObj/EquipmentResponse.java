@@ -1,2 +1,4 @@
-package lk.ijse.cropmonitoringsystembackend.customObj;public interface EquipmentResponse {
+package lk.ijse.cropmonitoringsystembackend.customObj;
+
+public interface EquipmentResponse {
 }

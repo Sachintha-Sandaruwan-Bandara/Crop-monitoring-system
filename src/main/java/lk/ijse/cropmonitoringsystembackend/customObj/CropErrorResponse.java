@@ -1,2 +1,13 @@
-package lk.ijse.cropmonitoringsystembackend.customObj;public class CropErrorResponse {
+package lk.ijse.cropmonitoringsystembackend.customObj;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class CropErrorResponse implements CropResponse{
+    private int errorCode;
+    private String errorMessage;
 }

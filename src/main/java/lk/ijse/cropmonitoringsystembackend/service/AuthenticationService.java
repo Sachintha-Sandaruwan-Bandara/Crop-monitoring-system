@@ -1,9 +1,9 @@
-package lk.ijse.gdse.aad68.NoteCollectorV2.service;
+package lk.ijse.cropmonitoringsystembackend.service;
 
 
-import lk.ijse.gdse.aad68.NoteCollectorV2.dto.impl.UserDTO;
-import lk.ijse.gdse.aad68.NoteCollectorV2.jwtmodels.JwtAuthResponse;
-import lk.ijse.gdse.aad68.NoteCollectorV2.jwtmodels.SignIn;
+import lk.ijse.cropmonitoringsystembackend.dto.UserDTO;
+import lk.ijse.cropmonitoringsystembackend.jwtmodels.JwtAuthResponse;
+import lk.ijse.cropmonitoringsystembackend.jwtmodels.SignIn;
 
 public interface AuthenticationService {
     JwtAuthResponse signIn(SignIn signIn);

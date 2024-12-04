@@ -52,7 +52,7 @@ public class StaffServiceImpl implements StaffService {
     }
 
     public List<StaffDTO> getAllStaff() {
-        return mapping.convertPassengerToDTOList(staffDAO.findAll());
+        return mapping.convertStaffToDTOList(staffDAO.findAll());
     }
 
     @Override

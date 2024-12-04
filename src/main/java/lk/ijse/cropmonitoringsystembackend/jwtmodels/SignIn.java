@@ -1,4 +1,4 @@
-package lk.ijse.gdse.aad68.NoteCollectorV2.jwtmodels;
+package lk.ijse.cropmonitoringsystembackend.jwtmodels;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

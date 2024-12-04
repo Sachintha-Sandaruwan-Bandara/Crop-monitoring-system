@@ -10,8 +10,18 @@ import lombok.NoArgsConstructor;
 
 
 
-
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class VehicleEntity {
 
+    @Id
+    private String vehicleCode;
 
+    private String licensePlateNumber;
+    private String category;
+    private String fuelType;
+    private String status;
+    private String remark;
 }

@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class MonitoringLogEntity {
+public class LogEntity {
 
     @Id
     private String logCode;

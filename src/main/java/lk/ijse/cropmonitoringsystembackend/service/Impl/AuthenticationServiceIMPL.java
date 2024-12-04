@@ -1,9 +1,13 @@
-package lk.ijse.gdse.aad68.NoteCollectorV2.service;
-import lk.ijse.gdse.aad68.NoteCollectorV2.dao.UserDao;
-import lk.ijse.gdse.aad68.NoteCollectorV2.dto.impl.UserDTO;
-import lk.ijse.gdse.aad68.NoteCollectorV2.jwtmodels.JwtAuthResponse;
-import lk.ijse.gdse.aad68.NoteCollectorV2.jwtmodels.SignIn;
-import lk.ijse.gdse.aad68.NoteCollectorV2.util.Mapping;
+package lk.ijse.cropmonitoringsystembackend.service.Impl;
+
+
+import lk.ijse.cropmonitoringsystembackend.dao.UserDAO;
+import lk.ijse.cropmonitoringsystembackend.dto.UserDTO;
+import lk.ijse.cropmonitoringsystembackend.jwtmodels.JwtAuthResponse;
+import lk.ijse.cropmonitoringsystembackend.jwtmodels.SignIn;
+import lk.ijse.cropmonitoringsystembackend.service.AuthenticationService;
+import lk.ijse.cropmonitoringsystembackend.service.JWTService;
+import lk.ijse.cropmonitoringsystembackend.util.Mapping;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -13,7 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class AuthenticationServiceIMPL implements AuthenticationService {
-    private final UserDao userDao;
+    private final UserDAO userDao;
     private final JWTService jwtService;
     private final Mapping mapping;
     //utils

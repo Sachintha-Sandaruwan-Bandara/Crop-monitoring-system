@@ -1,4 +1,4 @@
-package lk.ijse.gdse.aad68.NoteCollectorV2.service;
+package lk.ijse.cropmonitoringsystembackend.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 
